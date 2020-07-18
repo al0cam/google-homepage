@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .pocetak
+    {
+        margin: 0;
+    }
+    .odjeljak1
+    {
+        background-color: rgb(255, 255, 255);
+        grid-area: header;
+        justify-self: start;
+        margin: 10px
+    }    
+    .odjeljak2
+    {
+        background-color: rgb(255, 255, 255);
+        grid-area: header;
+        justify-self: end;
+        margin: 10px;
+    }
+    .odjeljak3
+    {
+        background-color: rgb(255, 255, 255);
+        grid-area: logo;
+        justify-self: center;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 140px;
+    }
+
+    .buttoni
+    {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .button_search
+    {
+        background-color: #f2f2f2;
+        border: 1px solid #f2f2f2;
+        border-radius: 4px;
+        color: #5F6368;
+        font-family: arial,sans-serif;
+        font-size: 14px;
+        margin: 11px 4px;
+        padding: 0 16px;
+        line-height: 27px;
+        height: 36px;
+        min-width: 54px;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+        background-image: -moz-linear-gradient(top,#f5f5f5,#f1f1f1);
+       
+    }
+    .button_random
+    {
+        background-color: #f2f2f2;
+        border: 1px solid #f2f2f2;
+        border-radius: 4px;
+        color: #5F6368;
+        font-family: arial,sans-serif;
+        font-size: 14px;
+        margin: 11px 4px;
+        padding: 0 16px;
+        line-height: 27px;
+        height: 36px;
+        min-width: 54px;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+        background-image: -moz-linear-gradient(top,#f5f5f5,#f1f1f1);
+        
+    }
+    .logo_class
+    {
+        margin-bottom: 30px;
+    }
+    .search
+    {
+        flex: 1;
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        margin-top: 0px;
+        padding: 0;
+        color: rgba(0,0,0,.87);
+        word-wrap: break-word;
+        outline: none;
+        /*display: flex;
+        flex: 100%;*/
+        -webkit-tap-highlight-color: transparent;
+        margin-top: -37px;
+        font: 16px arial,sans-serif;
+        line-height: normal;
+        line-height: 34px;
+        height: 34px !important;
+    }
+    .kutija_za_search
+    {
+        background: #fff;
+        display: flex;
+        border-radius: 8px;
+        border: 1px solid #dfe1e5;
+        box-shadow: none;
+        border-radius: 24px;
+        z-index: 3;
+        height: 44px;
+        margin: 0 auto;
+        width: 482px;
+        font-size: small;
+        color: #222;
+        font-family: arial,sans-serif;
+    }
+    .footerkutija
+    {
+        position: relative;
+        bottom: 0;
+        grid-area: footer;
+        background-color: #e4e4e4;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: solid 1px;
+        border-color: rgb(160, 156, 156);
+    }
+    .footer_lijevo
+    {
+        justify-self: start;
+        margin: 10px;
+    }
+    .footer_lijevo a
+    {
+        margin: 10px;
+    }
+    .footer_desno a
+    {
+        margin: 10px;
+    }
+    .footer_desno
+    {
+        justify-self: end;
+        margin: 10px;
+    }
+    .skorofooter
+    {
+        position: relative;
+        grid-area: skoro-footer;
+        background-color: #e4e4e4;
+        display: flex;
+        flex: auto;
+        flex-direction: row;
+        border-top: solid 1px;
+        border-bottom: solid 1px;
+        border-color: rgb(160, 156, 156);
+    }
+    .skorofooter a
+    {
+        margin: 10px;
+        margin-left: 20px;
+    }
+    .kutija
+    {   
+        font-size: 12px;
+        width: 100%;
+        min-height: 100px;
+        background-color: rgb(255, 255, 255);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr auto auto;
+        grid-template-areas: 
+        "header"
+        "logo"
+        "skoro-footer"
+        "footer";
+    }
+    .plavibutton
+    {
+        border-radius: 0;
+        /*border: none;*/
+        border: 3px solid #4285f4;
+        background-color: #4285f4;
+        padding: 0px 12px;
+        align-self: center;
+    }
+    .plavibutton a
+    {
+        
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+</style>
+    
+</head>
+<body class="pocetak">
+    <div class="kutija">
+        <div class="odjeljak1"></div>    
+
+        <div class="odjeljak2">
+            <a href="https://www.google.com/">Gmail</a>
+            <a href="https://www.google.com/">Slike</a> 
+            <button class="plavibutton"> <a href="https://www.google.com/"> Prijavite se</a></button>
+        </div>
+
+        <div class="odjeljak3">
+            <dvi class="logo_class">
+                <img src="logo.png">
+            </dvi>
+            <div class="kutija_za_search">
+             </div>
+            <div >
+                <button class="button_search">search</button>
+                <button class="button_random">random</button>
+            </div>
+        </div>
+
+        <div class="skorofooter"> <a href="https://www.google.com/">Hrvatska</a> </div>
+        <div class="footerkutija">
+            <div class="footer_lijevo">
+                <a href="https://ads.google.com/intl/hr_hr/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Oglasavanja</a>
+                <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Tvrtka</a>
+                <a href="https://about.google/?utm_source=google-HR&utm_medium=referral&utm_campaign=hp-footer&fg=1">O Nama </a>
+                <a href="https://www.google.com/search/howsearchworks/?fg=1">Kako funkcionira Pretrazivanje </a>
+            </div>
+            <div class="footer_desno">
+                <a href="https://policies.google.com/privacy?fg=1">Privatnost</a>
+                <a href="https://policies.google.com/terms?fg=1">Uvjeti </a>
+                <a href="https://www.google.com/preferences?hl=hr">Postavke </a>
+            </div>
+        </div>    
+    </div>
+
+</body>
+</html>
